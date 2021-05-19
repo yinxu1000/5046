@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".BarchartActivity">
+    <Button
+        android:id="@+id/setStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set start date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startDateTextview"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/setEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set end date     "
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/endDateTextview"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="10dp"
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/common_google_signin_btn_text_dark_pressed"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Report"
+            android:textAlignment="center"
+
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/pickTimePieChart"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/Title"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/showTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/pickTimePieChart"
+
+                android:hint="Date"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/showTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pick"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/pingk_et_bg"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/createPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pickTimePieChart"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Create Pie Chart"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/pingk_et_bg"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/PieChart"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/createPieChart"
+            >
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+
+        <LinearLayout
+            android:id="@+id/pickStartTimeBarChart"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/PieChart"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Start Date"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <Button
+                android:id="@+id/startTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="START"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/pingk_et_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pickEndTimeBarChart"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_below="@id/pickStartTimeBarChart">
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="*End Date"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <Button
+                android:id="@+id/endTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="END"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/pingk_et_bg"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/createBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pickEndTimeBarChart"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Create Bar Chart"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/pingk_et_bg"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/BarChart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/createBarChart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+        </com.github.mikephil.charting.charts.BarChart>
+    </RelativeLayout>
+</ScrollView>

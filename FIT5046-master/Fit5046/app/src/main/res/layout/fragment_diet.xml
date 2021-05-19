@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tv_foodCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FOOD CATEGORY:"
+
+        />
+
+    <Spinner
+        android:id="@+id/sp_foodCate_daily"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+
+    <ListView
+        android:id="@+id/tv_foodList"
+        android:layout_width="match_parent"
+        android:layout_height="269dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <Button
+        android:id="@+id/tv_addFood"
+        android:layout_width="284dp"
+        android:layout_height="72dp"
+        android:background="@drawable/pingk_et_bg"
+        android:text="Add Selected Food"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/btn_searchFood"
+        android:layout_width="284dp"
+        android:layout_height="72dp"
+        android:background="@drawable/pingk_et_bg"
+        android:text="Search a new food"
+        android:textColor="@color/cardview_light_background"
+        android:textAllCaps="false"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+
+</LinearLayout>

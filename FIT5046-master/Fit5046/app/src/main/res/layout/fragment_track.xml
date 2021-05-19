@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_back"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calorie Tracker" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:background="@drawable/download" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="86dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="154dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blank"
+                android:text="Goal:" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blank"
+                android:text="Total Step:" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goal"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:background="@drawable/pingk_et_bg"/>
+
+            <TextView
+                android:id="@+id/tv_totalstep"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pingk_et_bg"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

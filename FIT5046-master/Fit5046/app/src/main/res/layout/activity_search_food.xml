@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <include layout="@layout/main_title_bar"/>
+
+    <ImageView
+        android:id="@+id/img_search_result"
+        android:layout_width="196dp"
+        android:layout_height="175dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <EditText
+        android:id="@+id/et_foodSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:inputType="textPersonName"
+        android:hint="input keyword here"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="250dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <ListView
+        android:id="@+id/list_searchResualt"
+        android:layout_width="411dp"
+        android:layout_height="273dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="314dp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>

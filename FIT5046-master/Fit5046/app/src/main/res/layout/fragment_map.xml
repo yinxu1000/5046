@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_park"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="615dp"
+        android:background="@drawable/pingk_et_bg"
+        android:text="Nearby_park"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp" />
+
+
+</android.support.constraint.ConstraintLayout>

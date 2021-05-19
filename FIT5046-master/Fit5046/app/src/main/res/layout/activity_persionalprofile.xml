@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <include layout="@layout/main_title_bar"></include>
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FirstName:"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <EditText
+            android:id="@+id/et_firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="First Name"
+            android:inputType="textEmailAddress"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LastName:"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <EditText
+            android:id="@+id/et_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:inputType="textEmailAddress"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="78dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <RadioGroup
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/rg_gender">
+
+        <RadioButton
+            android:id="@+id/rb_gd_m"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb_gd_f"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="email"
+        android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="89dp"
+        />
+
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:hint="Date of berth"
+        android:drawableLeft="@drawable/ic_wb_sunny_black_24dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="158dp"
+        android:tag="Date of berth"/>
+
+
+
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="height(cm)"
+        android:drawableLeft="@drawable/ic_accessibility_black_24dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="158dp"
+        />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="weight(kg)"
+        android:drawableLeft="@drawable/ic_fitness_center_black_24dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="158dp"
+        android:tag="Weight"/>
+
+
+
+
+    <EditText
+        android:id="@+id/et_postCode"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_markunread_mailbox_black_24dp"
+        android:hint="post code"
+        android:inputType="numberDecimal"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:hint="address"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/et_step_mile"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:hint="steps per mile"
+        android:inputType="numberDecimal"
+        android:drawableLeft="@drawable/ic_directions_walk_black_24dp"
+        android:gravity="center"/>
+
+
+    <TextView
+
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:text="Level Of Activity" />
+
+
+
+    <Spinner
+            android:id="@+id/sp_loa"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Submit!"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
+</ScrollView>
